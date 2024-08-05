@@ -42,18 +42,14 @@ section {
     margin-bottom: 20px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.project {
-    background-color: #e6f7ff; /* Light pastel blue background for projects */
-    border: 1px solid #b0e0e6;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 10px;
+.profile-picture {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Keep the height equal to the width for a circular shape */
+    border-radius: 50%; /* Creates a circular shape */
+    object-fit: cover; /* Ensures the image covers the frame while maintaining its aspect ratio */
+    border: 5px solid #b0e0e6; /* Optional: adds a border that matches the pastel theme */
+    display: block;
+    margin: 0 auto; /* Centers the image */
 }
 
 .social-links a {
