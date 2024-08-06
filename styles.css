@@ -80,15 +80,15 @@ nav ul li a:hover {
 }
 
 .social-links {
-    margin-top: 10px;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: center; /* Center align the links */
+    margin-top: 10px;
 }
 
 .social-link {
     color: #333; /* Darker color for the links */
     text-decoration: none;
+    margin: 0 10px; /* Space between links */
 }
 
 .social-link:hover {
@@ -99,4 +99,5 @@ nav ul li a:hover {
 .text-content p {
     margin: 0 0 20px 0;
 }
+
 
