@@ -79,7 +79,7 @@ nav ul li a:hover {
 
 .profile-picture {
     width: 100%;
-    max-width: 450px; /* Larger width */
+    max-width: 250px; /* Larger width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Circular shape */
     object-fit: cover;
