@@ -40,31 +40,38 @@ main {
 
 .about-section {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    align-items: flex-start;
 }
 
 .text-content {
     flex: 1;
     margin-right: 20px;
+    max-width: 60%;
 }
 
 .image-content {
     flex: 0 0 auto;
+    max-width: 40%;
 }
 
 .profile-picture {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Keep the height equal to the width for a circular shape */
+    width: 225px; /* Increase the width by 50% (150px * 1.5) */
+    height: 225px; /* Increase the height by 50% (150px * 1.5) */
     border-radius: 50%; /* Creates a circular shape */
     object-fit: cover; /* Ensures the image covers the frame while maintaining its aspect ratio */
     border: 5px solid #b0e0e6; /* Optional: adds a border that matches the pastel theme */
     display: block;
+    margin: 0 auto 15px auto; /* Centers the image and adds space below it */
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 10px; /* Adds space between the image and the social links */
 }
 
 .social-links a {
-    margin-right: 15px;
+    display: block;
+    margin: 5px 0;
     color: #333;
 }
 
@@ -81,4 +88,5 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 
