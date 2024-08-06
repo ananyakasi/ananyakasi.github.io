@@ -15,12 +15,15 @@ header {
     justify-content: space-between;
     align-items: center;
     color: white;
+    flex-wrap: wrap;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .header-content h1 {
@@ -60,6 +63,7 @@ nav ul li a:hover {
     display: flex;
     align-items: flex-start;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .text-content {
@@ -74,8 +78,9 @@ nav ul li a:hover {
 }
 
 .profile-picture {
-    width: 450px; /* Larger width */
-    height: 450px; /* Larger height */
+    width: 100%;
+    max-width: 450px; /* Larger width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Circular shape */
     object-fit: cover;
     object-position: top left; /* Adjust position to top left */
@@ -102,3 +107,33 @@ nav ul li a:hover {
 .text-content p {
     margin: 0 0 20px 0;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .image-content {
+        margin: 20px 0;
+    }
+
+    .text-content {
+        margin: 0;
+    }
+}
+
