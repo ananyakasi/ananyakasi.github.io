@@ -78,6 +78,7 @@ nav ul li a:hover {
     height: 450px; /* Larger height */
     border-radius: 50%; /* Circular shape */
     object-fit: cover;
+    object-position: top left; /* Adjust position to top left */
     border: 5px solid #b0e0e6; /* Border matching pastel theme */
 }
 
