@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff; /* Light pastel blue background */
@@ -61,13 +63,12 @@ nav ul li a:hover {
 .text-content {
     flex: 1;
     margin-right: 20px;
-    margin-left: 20px; /* Reasonable margin on the left */
 }
 
 .image-content {
-    flex: 0 0 auto;
-    text-align: center;
+    flex-shrink: 0;
     margin-left: 20px;
+    text-align: center;
 }
 
 .profile-picture {
@@ -75,11 +76,14 @@ nav ul li a:hover {
     height: 450px; /* Larger height */
     border-radius: 50%; /* Circular shape */
     object-fit: cover;
-    border: 5px solid #b0e0e6; /* Optional: adds a border that matches the pastel theme */
+    border: 5px solid #b0e0e6; /* Border matching pastel theme */
 }
 
 .social-links {
-    margin-top: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .social-link {
@@ -90,3 +94,9 @@ nav ul li a:hover {
 .social-link:hover {
     color: #4682b4; /* Darker blue on hover */
 }
+
+/* Ensure text wraps around image */
+.text-content p {
+    margin: 0 0 20px 0;
+}
+
