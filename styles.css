@@ -78,11 +78,10 @@ nav ul li a:hover {
 }
 
 .profile-picture {
-    width: 250px; /* Smaller width */
-    height: 250px; /* Smaller height */
-    border-radius: 50%; /* Circular shape */
+    width: 250px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
+    border-radius: 15px; /* Beveled edges */
     object-fit: cover;
-    object-position: top left; /* Adjust position to top left */
     border: 5px solid #b0e0e6; /* Border matching pastel theme */
 }
 
