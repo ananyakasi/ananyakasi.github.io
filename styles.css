@@ -78,9 +78,8 @@ nav ul li a:hover {
 }
 
 .profile-picture {
-    width: 100%;
-    max-width: 250px; /* Larger width */
-    height: auto; /* Maintain aspect ratio */
+    width: 250px; /* Smaller width */
+    height: 250px; /* Smaller height */
     border-radius: 50%; /* Circular shape */
     object-fit: cover;
     object-position: top left; /* Adjust position to top left */
@@ -97,6 +96,7 @@ nav ul li a:hover {
     color: #333; /* Darker color for the links */
     text-decoration: none;
     margin: 0 10px; /* Space between links */
+    font-size: 1.5em; /* Larger icon size */
 }
 
 .social-link:hover {
@@ -136,4 +136,5 @@ nav ul li a:hover {
         margin: 0;
     }
 }
+
 
