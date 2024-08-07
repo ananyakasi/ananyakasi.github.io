@@ -12,7 +12,6 @@ header {
     background-color: #b0e0e6; /* Pastel blue header background */
     padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: white;
     flex-wrap: wrap;
@@ -20,13 +19,23 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
 }
 
-.header-content h1 {
+.profile-picture-container {
+    margin-right: 20px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 120px); /* Adjust width based on the profile picture size */
+}
+
+.header-text h1 {
     margin: 0;
     font-size: 2em;
     font-weight: bold;
@@ -37,6 +46,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 nav ul li {
@@ -78,9 +89,9 @@ nav ul li a:hover {
 }
 
 .profile-picture {
-    width: 250px; /* Adjust width as needed */
-    height: 250px; /* Adjust height as needed */
-    border-radius: 15px; /* Beveled edges */
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Beveled edges */
     object-fit: cover;
     border: 5px solid #b0e0e6; /* Border matching pastel theme */
 }
@@ -114,6 +125,10 @@ nav ul li a:hover {
         align-items: flex-start;
     }
 
+    .profile-picture-container {
+        margin-bottom: 20px;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: flex-start;
@@ -135,5 +150,6 @@ nav ul li a:hover {
         margin: 0;
     }
 }
+
 
 
