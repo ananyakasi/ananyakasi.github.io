@@ -68,13 +68,14 @@ header nav ul li a:hover {
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     border: 5px solid #b0e0e6; /* Border matching pastel theme */
+    margin-top: 0; /* Align top with text */
 }
 
 .profile-section h1 {
-    margin: 20px 0;
+    margin: 0; /* Remove margin to align with top of image */
     font-size: 2.5em; /* Increased font size */
     font-weight: bold;
-    color: #333; /* Dark gray color */
+    color: #666; /* Gray color */
 }
 
 .social-links {
@@ -98,7 +99,7 @@ header nav ul li a:hover {
     flex: 1;
     margin-top: 0; /* Align with profile picture */
     font-size: 1.2em; /* Larger font size */
-    color: #333; /* Dark gray color */
+    color: #666; /* Gray color */
 }
 
 /* Responsive Design */
