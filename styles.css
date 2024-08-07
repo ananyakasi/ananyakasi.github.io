@@ -46,12 +46,12 @@ header nav ul li a:hover {
 .profile-section {
     flex-shrink: 0;
     margin-right: 20px;
+    margin-left: 40px; /* Larger left margin */
 }
 
 .profile-picture {
-    width: 150px; /* Adjust width as needed */
+    width: 225px; /* 50% larger than the previous 150px */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Beveled edges */
     object-fit: cover;
     border: 5px solid #b0e0e6; /* Border matching pastel theme */
 }
