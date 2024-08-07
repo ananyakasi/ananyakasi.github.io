@@ -10,11 +10,19 @@ body {
 
 header {
     background-color: #b0e0e6; /* Pastel blue header background */
-    padding: 10px 20px;
+    padding: 10px 40px; /* Adjusted padding for larger margins */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Set a max-width to prevent stretching */
+    margin: 0 auto; /* Center the header content */
 }
 
 header h1 {
@@ -31,7 +39,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 20px; /* Equal margin for all links */
+    margin-left: 20px; /* Space between links */
 }
 
 header nav ul li a {
@@ -46,7 +54,7 @@ header nav ul li a:hover {
 
 .container {
     display: flex;
-    margin: 20px 60px; /* Equal margins on left and right */
+    margin: 20px 40px; /* Adjusted margins for left and right */
 }
 
 .profile-section {
@@ -85,33 +93,4 @@ header nav ul li a:hover {
     color: #4682b4; /* Darker blue on hover */
 }
 
-.text-content {
-    flex: 1;
-    margin-top: 0; /* Align with profile picture */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-section {
-        margin-bottom: 20px;
-    }
-
-    .text-content {
-        margin: 0;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    header nav ul li {
-        margin-left: 0;
-        margin-top: 5px;
-    }
-}
+.text-c
