@@ -12,9 +12,15 @@ header {
     background-color: #b0e0e6; /* Pastel blue header background */
     padding: 10px 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 header nav ul {
@@ -25,7 +31,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 10px; /* Reduced margin to move links to the left */
+    margin-left: 20px; /* Equal margin for all links */
 }
 
 header nav ul li a {
@@ -40,13 +46,12 @@ header nav ul li a:hover {
 
 .container {
     display: flex;
-    margin: 20px;
+    margin: 20px 60px; /* Equal margins on left and right */
 }
 
 .profile-section {
     flex-shrink: 0;
     margin-right: 20px;
-    margin-left: 60px; /* Larger left margin */
 }
 
 .profile-picture {
@@ -110,4 +115,3 @@ header nav ul li a:hover {
         margin-top: 5px;
     }
 }
-
