@@ -55,6 +55,7 @@ header nav ul li a:hover {
 
 .container {
     display: flex;
+    margin: 80px 80px; /* Increased margins for left and right */
     width: 60%
 }
 
