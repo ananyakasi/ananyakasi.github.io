@@ -134,7 +134,7 @@ header nav ul li a:hover {
     }
 
     .text-below {
-        margin-top: 20px; /* Space below the image */
+        margin-top: 200px; /* Space below the image */
         font-size: 1.2em;
         color: #666;
         width: 100%; /* Take the full width of the container */
