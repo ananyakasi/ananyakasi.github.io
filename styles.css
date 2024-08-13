@@ -121,6 +121,26 @@ header nav ul li a:hover {
         margin: 0;
     }
 
+    .text-content {
+        display: flex;
+        flex-direction: column;
+}
+
+    .text-side {
+        flex: 1;
+        margin-right: 30px; /* Space beside the image */
+        font-size: 1.2em;
+        color: #666;
+    }
+
+    .text-below {
+        margin-top: 20px; /* Space below the image */
+        font-size: 1.2em;
+        color: #666;
+        width: 100%; /* Take the full width of the container */
+    }
+
+
     header nav ul {
         flex-direction: column;
         align-items: flex-end;
