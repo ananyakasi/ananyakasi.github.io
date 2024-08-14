@@ -54,7 +54,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     margin: 10% auto; /* Centered with margins on left and right */ /* changed from 80 to 10%*/
-    max-width: 60%; /* Center container and restrict maximum width ----changed from 1200 to 60%*/
+    max-width: 70%; /* Center container and restrict maximum width ----changed from 1200 to 60%*/
 }
 
 .profile-section {
