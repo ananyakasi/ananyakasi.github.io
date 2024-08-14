@@ -1,1 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light pastel blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
+header {
+    background-color: #b0e0e6; /* Pastel blue bar background */
+    width: 220px; /* Adjusted width to be slightly wider than profile picture */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items inside the bar */
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align profile picture */
+    margin-bottom: 20px; /* Space below profile picture */
+    text-align: center; /* Center-align profile picture and social links */
+}
+
+.profile-picture {
+    width: 180px; /* Adjust width for profile picture */
+    height: 180px; /* Adjust height for rectangular picture */
+    object-fit: cover;
+    border: 5px solid #b0e0e6; /* Border matching pastel theme */
+    border-radius: 5px; /* Slightly rounded corners for a rectangular look */
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align navigation links */
+    margin-bottom: auto; /* Pushes navigation links up */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 15px 0; /* Space between links */
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #ddd; /* Light gray on hover */
+}
+
+.social-links {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center-align items horizontally */
+    margin-top: auto; /* Pushes social links to the bottom */
+    padding: 20px; /* Space around social links */
+}
+
+.social-link {
+    color: black; /* Change color to black */
+    font-size: 1.5em;
+    margin: 0 10px; /* Space between social media icons */
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #666; /* Slightly lighter black on hover */
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; /* Adjusted margin to match vertical bar width */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.text-side {
+    margin-bottom: 20px;
+}
+
+.text-below {
+    clear: both;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Adjust height for small screens */
+        flex-direction: row; /* Change to horizontal layout */
+        justify-content: space-between; /* Space out items */
+        padding: 10px;
+    }
+
+    .profile-section {
+        margin-bottom: 0;
+    }
+
+    .profile-picture {
+        width: 100px; /* Smaller profile picture */
+        height: 70px; /* Smaller height for rectangular picture */
+    }
+
+    .social-links {
+        justify-content: center; /* Center-align social media icons */
+        padding: 10px 0; /* Adjust padding for small screens */
+    }
+
+    .container {
+        margin-left: 0; /* Remove left margin for small screens */
+        padding: 20px;
+    }
+}
