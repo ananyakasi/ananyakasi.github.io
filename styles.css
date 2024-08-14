@@ -20,7 +20,6 @@ header {
     justify-content: space-between;
     width: 100%;
     max-width: 1400px; /* Increased max-width for larger margins */
-    margin-left: 160px; /* Aligns the header content with the image */
     margin: 0 auto; /* Center the header content */
 }
 
@@ -53,8 +52,8 @@ header nav ul li a:hover {
 
 .container {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
     margin: 80px 80px; /* Increased margins for left and right */
-    width: 60%;
 }
 
 .profile-section {
@@ -68,52 +67,23 @@ header nav ul li a:hover {
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     border: 5px solid #b0e0e6; /* Border matching pastel theme */
-    margin-top: 0; /* Align top with text */
-}
-
-.profile-section h1 {
-    margin-top: 0; /* Align top with image */
-    margin: 0; /* Remove margin to align with top of image */
-    font-size: 2.5em; /* Increased font size */
-    font-weight: bold;
-    color: #666; /* Gray color */
-}
-
-.social-links {
-    display: flex;
-    justify-content: center; /* Center align social links */
-    margin-top: 10px;
-}
-
-.social-link {
-    color: #333; /* Darker color for the links */
-    text-decoration: none;
-    margin-right: 15px; /* Space between links */
-    font-size: 1.5em; /* Larger icon size */
-}
-
-.social-link:hover {
-    color: #4682b4; /* Darker blue on hover */
 }
 
 .text-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    font-size: 1.2em;
+    color: #666;
 }
 
 .text-side {
-    flex: 1;
-    margin-right: 30px;
-    font-size: 1.2em;
-    color: #666;
+    margin-bottom: 20px;
 }
 
 .text-below {
-    margin-top: 20px; /* Space below the image */
-    font-size: 1.2em;
-    color: #666;
-    width: 100%; /* Full width of the container */
-    clear: both; /* Move below the floating image */
+    clear: both;
+    width: 100%;
 }
 
 /* Responsive Design */
