@@ -52,9 +52,10 @@ header nav ul li a:hover {
 
 .container {
     display: flex;
+    align-items: flex-start; /* Align items to the top */
     flex-wrap: wrap;
-    margin: 10% auto; /* Centered with margins on left and right */ /* changed from 80 to 10%*/
-    max-width: 70%; /* Center container and restrict maximum width ----changed from 1200 to 60%*/
+    margin: 5% auto; /* Adjust the margin as needed */
+    max-width: 70%; /* Center container and restrict maximum width */
 }
 
 .profile-section {
@@ -75,6 +76,7 @@ header nav ul li a:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; /* Ensure text starts at the top */
     font-size: 1.2em;
     color: #666;
 }
@@ -87,6 +89,7 @@ header nav ul li a:hover {
     clear: both;
     width: 100%;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
