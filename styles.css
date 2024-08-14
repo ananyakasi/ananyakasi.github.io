@@ -9,7 +9,7 @@ body {
 
 header {
     background-color: #b0e0e6; /* Pastel blue bar background */
-    width: 300px; /* Width of the vertical bar */
+    width: 220px; /* Adjusted width to be slightly wider than profile picture */
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
@@ -19,7 +19,6 @@ header {
 }
 
 .profile-section {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center-align profile picture */
@@ -55,16 +54,16 @@ nav a:hover {
 }
 
 .social-links {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center-align items horizontally */
     margin-top: auto; /* Pushes social links to the bottom */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center-align social media icons */
+    padding: 20px; /* Space around social links */
 }
 
 .social-link {
     color: black; /* Change color to black */
     font-size: 1.5em;
-    margin: 10px; /* Space between social media icons */
+    margin: 0 10px; /* Space between social media icons */
     text-decoration: none;
 }
 
@@ -76,7 +75,7 @@ nav a:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 300px; /* Margin to account for the vertical bar width */
+    margin-left: 220px; /* Adjusted margin to match vertical bar width */
     padding: 40px;
     box-sizing: border-box;
 }
@@ -115,6 +114,11 @@ nav a:hover {
     .profile-picture {
         width: 100px; /* Smaller profile picture */
         height: 70px; /* Smaller height for rectangular picture */
+    }
+
+    .social-links {
+        justify-content: center; /* Center-align social media icons */
+        padding: 10px 0; /* Adjust padding for small screens */
     }
 
     .container {
