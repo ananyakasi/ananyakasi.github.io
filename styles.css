@@ -90,6 +90,23 @@ header nav ul li a:hover {
     width: 100%;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    margin-top: auto; /* Push the icons to the bottom of the vertical bar */
+    padding-bottom: 20px; /* Add some space at the bottom */
+}
+
+.social-link {
+    font-size: 2em; /* Increase the size of the icons */
+    color: black; /* Set the color to black */
+    margin: 0 15px; /* Add horizontal spacing between icons */
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #666; /* Optionally, add a hover effect */
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
