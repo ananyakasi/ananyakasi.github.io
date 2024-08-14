@@ -75,7 +75,7 @@ nav a:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 220px; /* Adjusted margin to match vertical bar width */
+    margin-left: 40px; /* Adjusted margin to match vertical bar width */
     padding: 40px;
     box-sizing: border-box;
 }
