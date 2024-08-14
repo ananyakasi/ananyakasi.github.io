@@ -18,7 +18,7 @@ header {
 .header-content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 70%;
     max-width: 1200px; /* Set a max-width for the header content */
     margin: 0 auto; /* Center the header content */
 }
