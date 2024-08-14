@@ -28,7 +28,7 @@ header {
 
 .profile-picture {
     width: 180px; /* Adjust width for profile picture */
-    height: 120px; /* Adjust height for rectangular picture */
+    height: 180px; /* Adjust height for rectangular picture */
     object-fit: cover;
     border: 5px solid #b0e0e6; /* Border matching pastel theme */
     border-radius: 5px; /* Slightly rounded corners for a rectangular look */
@@ -75,8 +75,8 @@ nav a:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 40px; /* Adjusted margin to match vertical bar width */
-    padding: 40px;
+    margin-left: 10px; /* Adjusted margin to match vertical bar width */
+    padding: 10px;
     box-sizing: border-box;
 }
 
