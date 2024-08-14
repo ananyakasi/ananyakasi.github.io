@@ -10,7 +10,7 @@ header {
     background-color: #b0e0e6; /* Pastel blue header background */
     padding: 20px 60px; /* Increased padding for larger margins */
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; /* Adjust for proper alignment */
     align-items: center;
     color: white;
 }
@@ -53,13 +53,15 @@ header nav ul li a:hover {
 .container {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping */
-    margin: 80px 80px; /* Increased margins for left and right */
+    margin: 80px auto; /* Center and increase margins for left and right */
+    max-width: 1200px; /* Ensure container does not stretch too wide */
 }
 
 .profile-section {
-    flex-shrink: 0;
+    flex: 0 0 auto; /* Prevent shrinking or growing */
     margin-right: 30px; /* Larger margin for spacing */
     text-align: center; /* Center align social links */
+    margin-bottom: 20px; /* Space below the profile section */
 }
 
 .profile-picture {
@@ -82,6 +84,7 @@ header nav ul li a:hover {
 }
 
 .text-below {
+    /* Ensure it starts on a new line below the profile picture */
     clear: both;
     width: 100%;
 }
@@ -112,3 +115,4 @@ header nav ul li a:hover {
         margin-top: 5px;
     }
 }
+
