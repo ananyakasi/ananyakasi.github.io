@@ -4,71 +4,64 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 header {
-    background-color: #b0e0e6; /* Pastel blue header background */
-    padding: 20px; /* Adjust padding for header */ 
+    background-color: #b0e0e6; /* Pastel blue bar background */
+    width: 250px; /* Width of the vertical bar */
+    height: 100vh; /* Full viewport height */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+    flex-direction: column;
+    align-items: center; /* Center-align items inside the bar */
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
-    max-width: 1200px; /* Set a max-width for the header content */
-    margin: 0 auto; /* Center the header content */
+    flex-direction: column;
+    align-items: center; /* Center-align items inside the header-content */
+    width: 100%;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.8em; /* Font size for the header */
-    font-weight: bold;
+.profile-section {
+    margin-bottom: 30px; /* Space below profile picture */
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.profile-picture {
+    width: 150px; /* Adjust width for profile picture */
+    height: auto;
+    object-fit: cover;
+    border: 5px solid #b0e0e6; /* Border matching pastel theme */
+    border-radius: 50%; /* Circular profile picture */
+}
+
+nav {
     display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align navigation links */
 }
 
-header nav ul li {
-    margin-left: 20px; /* Space between links */
-}
-
-header nav ul li a {
+nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    margin: 10px 0; /* Space between links */
+    font-size: 1.2em;
 }
 
-header nav ul li a:hover {
+nav a:hover {
     color: #ddd; /* Light gray on hover */
 }
 
 .container {
+    flex: 1;
     display: flex;
-    flex-wrap: wrap;
-    margin: 10% auto; /* Centered with margins on left and right */ /* changed from 80 to 10%*/
-    max-width: 70%; /* Center container and restrict maximum width ----changed from 1200 to 60%*/
-}
-
-.profile-section {
-    flex: 0 0 auto;
-    margin-right: 20px; /* Space between profile section and text */
-    text-align: center;
-    margin-bottom: 20px; /* Space below profile section */
-}
-
-.profile-picture {
-    width: 250px; /* Adjust width for profile picture */
-    height: auto;
-    object-fit: cover;
-    border: 5px solid #b0e0e6; /* Border matching pastel theme */
+    flex-direction: column;
+    margin-left: 250px; /* Margin to account for the vertical bar width */
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 .text-content {
@@ -90,27 +83,29 @@ header nav ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    header {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Adjust height for small screens */
+        flex-direction: row; /* Change to horizontal layout */
+        justify-content: space-between; /* Space out items */
+        padding: 10px;
+    }
+
+    .header-content {
+        flex-direction: row;
         align-items: center;
-        margin: 20px; /* Adjust margins for small screens */
     }
 
     .profile-section {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
-    .text-content {
-        margin: 0;
+    .profile-picture {
+        width: 100px; /* Smaller profile picture */
     }
 
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    header nav ul li {
-        margin-left: 0;
-        margin-top: 5px;
+    .container {
+        margin-left: 0; /* Remove left margin for small screens */
+        padding: 20px;
     }
 }
