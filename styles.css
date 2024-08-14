@@ -8,7 +8,7 @@ body {
 
 header {
     background-color: #b0e0e6; /* Pastel blue header background */
-    padding: 20px; /* Adjust padding for header */
+    padding: 50px; /* Adjust padding for header */ /* changed to 50 from 20*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +53,7 @@ header nav ul li a:hover {
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin: 40px auto; /* Centered with margins on left and right */
+    margin: 80px auto; /* Centered with margins on left and right */ /* changed from 40 to 80*/
     max-width: 1200px; /* Center container and restrict maximum width */
 }
 
