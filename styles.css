@@ -99,7 +99,7 @@ header nav ul li a:hover {
 
 .social-link {
     font-size: 2em; /* Increase the size of the icons */
-    color: black; /* Set the color to black */
+    color: #f0f8ff; /* Set the color to black */
     margin: 0 15px; /* Add horizontal spacing between icons */
     text-decoration: none;
 }
