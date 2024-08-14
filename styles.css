@@ -9,7 +9,7 @@ body {
 
 header {
     background-color: #b0e0e6; /* Pastel blue bar background */
-    width: 250px; /* Width of the vertical bar */
+    width: 300px; /* Width of the vertical bar */
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
@@ -18,36 +18,35 @@ header {
     box-sizing: border-box;
 }
 
-.header-content {
+.profile-section {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-align items inside the header-content */
-    width: 100%;
-}
-
-.profile-section {
-    margin-bottom: 30px; /* Space below profile picture */
+    align-items: center; /* Center-align profile picture */
+    margin-bottom: 20px; /* Space below profile picture */
+    text-align: center; /* Center-align profile picture and social links */
 }
 
 .profile-picture {
-    width: 150px; /* Adjust width for profile picture */
-    height: auto;
+    width: 180px; /* Adjust width for profile picture */
+    height: 120px; /* Adjust height for rectangular picture */
     object-fit: cover;
     border: 5px solid #b0e0e6; /* Border matching pastel theme */
-    border-radius: 50%; /* Circular profile picture */
+    border-radius: 5px; /* Slightly rounded corners for a rectangular look */
 }
 
 nav {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center-align navigation links */
+    margin-bottom: auto; /* Pushes navigation links up */
 }
 
 nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    margin: 10px 0; /* Space between links */
+    margin: 15px 0; /* Space between links */
     font-size: 1.2em;
 }
 
@@ -55,11 +54,29 @@ nav a:hover {
     color: #ddd; /* Light gray on hover */
 }
 
+.social-links {
+    margin-top: auto; /* Pushes social links to the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align social media icons */
+}
+
+.social-link {
+    color: black; /* Change color to black */
+    font-size: 1.5em;
+    margin: 10px; /* Space between social media icons */
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #666; /* Slightly lighter black on hover */
+}
+
 .container {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 250px; /* Margin to account for the vertical bar width */
+    margin-left: 300px; /* Margin to account for the vertical bar width */
     padding: 40px;
     box-sizing: border-box;
 }
@@ -91,17 +108,13 @@ nav a:hover {
         padding: 10px;
     }
 
-    .header-content {
-        flex-direction: row;
-        align-items: center;
-    }
-
     .profile-section {
         margin-bottom: 0;
     }
 
     .profile-picture {
         width: 100px; /* Smaller profile picture */
+        height: 70px; /* Smaller height for rectangular picture */
     }
 
     .container {
