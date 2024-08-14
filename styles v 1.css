@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light pastel blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b0e0e6; /* Pastel blue header background */
+    padding: 20px; /* Adjust padding for header */ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 1200px; /* Set a max-width for the header content */
+    margin: 0 auto; /* Center the header content */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em; /* Font size for the header */
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px; /* Space between links */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ddd; /* Light gray on hover */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10% auto; /* Centered with margins on left and right */ /* changed from 80 to 10%*/
+    max-width: 70%; /* Center container and restrict maximum width ----changed from 1200 to 60%*/
+}
+
+.profile-section {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Space between profile section and text */
+    text-align: center;
+    margin-bottom: 20px; /* Space below profile section */
+}
+
+.profile-picture {
+    width: 250px; /* Adjust width for profile picture */
+    height: auto;
+    object-fit: cover;
+    border: 5px solid #b0e0e6; /* Border matching pastel theme */
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.text-side {
+    margin-bottom: 20px;
+}
+
+.text-below {
+    clear: both;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px; /* Adjust margins for small screens */
+    }
+
+    .profile-section {
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        margin: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
