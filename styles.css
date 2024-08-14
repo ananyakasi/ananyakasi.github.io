@@ -8,9 +8,9 @@ body {
 
 header {
     background-color: #b0e0e6; /* Pastel blue header background */
-    padding: 20px 60px; /* Increased padding for larger margins */
+    padding: 20px; /* Adjust padding for header */
     display: flex;
-    justify-content: space-between; /* Adjust for proper alignment */
+    justify-content: space-between;
     align-items: center;
     color: white;
 }
@@ -19,13 +19,13 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1400px; /* Increased max-width for larger margins */
+    max-width: 1200px; /* Set a max-width for the header content */
     margin: 0 auto; /* Center the header content */
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.8em; /* Increased font size */
+    font-size: 1.8em; /* Font size for the header */
     font-weight: bold;
 }
 
@@ -52,21 +52,21 @@ header nav ul li a:hover {
 
 .container {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
-    margin: 80px auto; /* Center and increase margins for left and right */
-    max-width: 1200px; /* Ensure container does not stretch too wide */
+    flex-wrap: wrap;
+    margin: 40px auto; /* Centered with margins on left and right */
+    max-width: 1200px; /* Center container and restrict maximum width */
 }
 
 .profile-section {
-    flex: 0 0 auto; /* Prevent shrinking or growing */
-    margin-right: 30px; /* Larger margin for spacing */
-    text-align: center; /* Center align social links */
-    margin-bottom: 20px; /* Space below the profile section */
+    flex: 0 0 auto;
+    margin-right: 20px; /* Space between profile section and text */
+    text-align: center;
+    margin-bottom: 20px; /* Space below profile section */
 }
 
 .profile-picture {
-    width: 100px; /* Larger than the previous 150px */
-    height: auto; /* Maintain aspect ratio */
+    width: 250px; /* Adjust width for profile picture */
+    height: auto;
     object-fit: cover;
     border: 5px solid #b0e0e6; /* Border matching pastel theme */
 }
@@ -84,7 +84,6 @@ header nav ul li a:hover {
 }
 
 .text-below {
-    /* Ensure it starts on a new line below the profile picture */
     clear: both;
     width: 100%;
 }
@@ -94,7 +93,7 @@ header nav ul li a:hover {
     .container {
         flex-direction: column;
         align-items: center;
-        margin: 20px; /* Reset margins for small screens */
+        margin: 20px; /* Adjust margins for small screens */
     }
 
     .profile-section {
@@ -115,4 +114,3 @@ header nav ul li a:hover {
         margin-top: 5px;
     }
 }
-
