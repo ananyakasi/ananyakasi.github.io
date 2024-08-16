@@ -9,11 +9,12 @@ body {
 
 header {
     background-color: #b0e0e6; /* Pastel blue header background */
-    padding: 30px; /* Adjust padding for header */ 
+    padding: 30px; /* Adjust padding for header */
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    position: relative; /* Ensure relative positioning for the header */
 }
 
 .header-content {
@@ -117,15 +118,15 @@ header nav ul li a:hover {
     border: none;
     color: white;
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px; /* Position the hamburger icon on the right side */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block; /* Show the hamburger icon on mobile */
-        position: absolute;
-        top: 25px;
-        right: 30px; /* Align the hamburger icon to the top right */
     }
 
     #nav ul {
