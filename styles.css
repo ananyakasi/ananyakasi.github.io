@@ -123,6 +123,9 @@ header nav ul li a:hover {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block; /* Show the hamburger icon on mobile */
+        position: absolute;
+        top: 25px;
+        right: 30px; /* Align the hamburger icon to the top right */
     }
 
     #nav ul {
