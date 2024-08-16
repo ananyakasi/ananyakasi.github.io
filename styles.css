@@ -66,7 +66,7 @@ header nav ul li a:hover {
 }
 
 .profile-picture {
-    width: 250px; /* Adjust width for profile picture */
+    width: 300px; /* Adjust width for profile picture */
     height: auto;
     object-fit: cover;
     border: 5px solid #b0e0e6; /* Border matching pastel theme */
