@@ -59,7 +59,7 @@ header nav ul li a:hover {
     align-items: flex-start; /* Align items to the top */
     flex-wrap: wrap;
     margin: 5% auto; /* Adjust the margin as needed */
-    max-width: 70%; /* Center container and restrict maximum width */
+    max-width: 75%; /* Center container and restrict maximum width */
 }
 
 .profile-section {
@@ -84,6 +84,7 @@ header nav ul li a:hover {
     justify-content: flex-start; /* Ensure text starts at the top */
     font-size: 1.2em;
     color: #666;
+    text-align: justify;
 }
 
 .text-side {
