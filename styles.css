@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%; /* for changing Ananya Kasi title */
-    max-width: 1200px; /* Set a max-width for the header content */
+    max-width: 75%; /* Set a max-width for the header content */
     margin: 0 auto; /* Center the header content */
 }
 
