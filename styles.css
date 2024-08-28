@@ -64,7 +64,7 @@ header nav ul li a:hover {
 
 .profile-section {
     flex: 0 0 auto;
-    margin-right: 30px; /* Space between profile section and text */
+    margin-right: 100px; /* Space between profile section and text */
     text-align: center;
     margin-bottom: 20px; /* Space below profile section */
 }
