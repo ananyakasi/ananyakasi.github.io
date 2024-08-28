@@ -73,7 +73,8 @@ header nav ul li a:hover {
     width: 300px; /* Adjust width for profile picture */
     height: auto;
     object-fit: cover;
-    border: 5px solid #b0e0e6; /* Border matching pastel theme */
+    /*border: 5px solid #b0e0e6;*/ /* Border matching pastel theme */
+    border: 5px solid #87CEFA;
 }
 
 .text-content {
