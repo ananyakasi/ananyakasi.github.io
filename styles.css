@@ -156,7 +156,7 @@ header nav ul li a:hover {
     background-color: #87CEFA; /* Matches header background */
     display: none; /* Hidden by default */
     flex-direction: column; /* Stack items vertically */
-    align-items: flex-end; /* Align items to the right */
+    align-items: center; /* Align items to the right */
     width: auto; /* Adjust width to content */
     padding: 0; /* Remove default padding */
     border-radius: 5px; /* Optional: Add rounded corners */
