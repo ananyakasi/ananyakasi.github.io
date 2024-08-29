@@ -63,7 +63,7 @@ header nav ul li a:hover {
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 5% auto;
-    max-width: 950px;
+    max-width: 85%;
     padding: 0 20px;
 }
 
@@ -76,7 +76,7 @@ header nav ul li a:hover {
 
 .profile-picture {
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
     object-fit: cover;
     border: 5px solid #87CEFA;
