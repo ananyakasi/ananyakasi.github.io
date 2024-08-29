@@ -49,8 +49,8 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.4em;
-    font-weight: bold;
+    font-size: 1.3em;
+   /* font-weight: bold;*/
     white-space: nowrap;
 }
 
