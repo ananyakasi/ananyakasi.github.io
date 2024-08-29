@@ -150,17 +150,17 @@ header nav ul li a:hover {
     }
 
     header nav ul {
-        display: none; /* Hide navigation by default on mobile */
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%; /* Full width on mobile */
-        margin-top: 15px;
-        position: absolute; /* Position the dropdown below the hamburger */
-        top: 60px; /* Positioning directly below the header */
-        right: 20px; /* Align with the hamburger icon */
-        background-color: #87CEFA; /* Match header background */
-        padding: 10px;
-        border-radius: 5px; /* Optional: Add border-radius for styling */
+    position: absolute; /* Ensures dropdown is positioned relative to header */
+    top: 60px; /* Space below the hamburger icon */
+    right: 20px; /* Align with the right side of the header */
+    background-color: #87CEFA; /* Matches header background */
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-end; /* Align items to the right */
+    width: auto; /* Adjust width to content */
+    padding: 0; /* Remove default padding */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
     }
 
     header nav ul.show {
