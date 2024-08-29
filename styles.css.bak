@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light pastel blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /*background-color: #b0e0e6; */ /* Pastel blue header background */
+    background-color: #87CEFA;
+    padding: 30px; /* Adjust padding for header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative; /* Ensure relative positioning for the header */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* for changing Ananya Kasi title */
+    max-width: 950px; /* Set a max-width for the header content */
+    margin: 0 auto; /* Center the header content */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em; /* Font size for the header */
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 90;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px; /* Space between links */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ddd; /* Light gray on hover */
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap;
+    margin: 5% auto; /* Adjust the margin as needed */
+    max-width: 75%; /* Center container and restrict maximum width */
+}
+
+.profile-section {
+    flex: 0 0 auto;
+    margin-right: 100px; /* Space between profile section and text */
+    text-align: center;
+    margin-bottom: 20px; /* Space below profile section */
+}
+
+.profile-picture {
+    width: 300px; /* Adjust width for profile picture */
+    height: auto;
+    object-fit: cover;
+    /*border: 5px solid #b0e0e6;*/ /* Border matching pastel theme */
+    border: 5px solid #87CEFA;
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure text starts at the top */
+    font-size: 1.2em;
+    color: #666;
+    text-align: justify;
+}
+
+.text-side {
+    margin-bottom: 5px;
+}
+
+.text-below {
+    clear: both;
+    width: 100%;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    margin-top: auto; /* Push the icons to the bottom of the vertical bar */
+    padding-bottom: 20px; /* Add some space at the bottom */
+}
+
+.social-link {
+    font-size: 2em; /* Increase the size of the icons */
+    color: black; /* Set the color to black */
+    margin: 0 15px; /* Add horizontal spacing between icons */
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #666; /* Optionally, add a hover effect */
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 1.8em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px; /* Position the hamburger icon on the right side */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+    #nav ul {
+        display: none; /* Hide navigation links by default on mobile */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav ul.show {
+        display: flex; /* Show the menu when active */
+    }
+
+    .header-content {
+        width: 100%; /* Ensure the header content spans the full width */
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+        padding: 0 20px; /* Add padding to the sides */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px; /* Adjust margins for small screens */
+    }
+
+    .profile-section {
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        margin: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
