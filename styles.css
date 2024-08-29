@@ -161,8 +161,8 @@ header nav ul li a:hover {
     padding: 0; /* Remove default padding */
     border-radius: 5px; /* Optional: Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
-    min-width: 150px; /* Minimum width slightly more than content */
-    padding: 10px 0; /* Optional padding for better spacing */
+    min-width: 100px; /* Minimum width slightly more than content */
+    padding: 10px  0; /* Optional padding for better spacing */
     }
 
     header nav ul.show {
