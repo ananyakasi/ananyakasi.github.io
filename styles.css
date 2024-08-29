@@ -156,7 +156,7 @@ header nav ul li a:hover {
         width: 100%; /* Full width on mobile */
         margin-top: 15px;
         position: absolute; /* Position the dropdown below the hamburger */
-        top: 100%; /* Positioning directly below the header */
+        top: 60px; /* Positioning directly below the header */
         right: 20px; /* Align with the hamburger icon */
         background-color: #87CEFA; /* Match header background */
         padding: 10px;
