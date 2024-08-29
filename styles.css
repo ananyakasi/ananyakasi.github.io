@@ -5,42 +5,45 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Increase line-height for readability */
 }
 
 header {
-    /*background-color: #b0e0e6; */ /* Pastel blue header background */
     background-color: #87CEFA;
-    padding: 30px; /* Adjust padding for header */
+    padding: 20px; /* Adjust padding for smaller screens */
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    position: relative; /* Ensure relative positioning for the header */
+    position: relative;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* for changing Ananya Kasi title */
-    max-width: 950px; /* Set a max-width for the header content */
-    margin: 0 auto; /* Center the header content */
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.8em; /* Font size for the header */
+    font-size: 1.8em;
     font-weight: bold;
 }
 
 header nav ul {
     list-style: none;
-    padding: 90;
+    padding: 0;
     margin: 0;
     display: flex;
+    justify-content: flex-end;
 }
 
 header nav ul li {
-    margin-left: 20px; /* Space between links */
+    margin-left: 20px;
 }
 
 header nav ul li a {
@@ -51,37 +54,35 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ddd; /* Light gray on hover */
+    color: #ddd;
 }
 
 .container {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
     flex-wrap: wrap;
-    margin: 5% auto; /* Adjust the margin as needed */
-    max-width: 75%; /* Center container and restrict maximum width */
+    margin: 5% auto;
+    max-width: 950px;
+    padding: 0 20px; /* Add padding for better spacing */
 }
 
 .profile-section {
     flex: 0 0 auto;
-    margin-right: 100px; /* Space between profile section and text */
+    margin-right: 40px; /* Reduce margin for smaller screens */
     text-align: center;
-    margin-bottom: 20px; /* Space below profile section */
+    margin-bottom: 20px;
 }
 
 .profile-picture {
-    width: 300px; /* Adjust width for profile picture */
+    width: 100%; /* Make profile picture responsive */
+    max-width: 200px; /* Set maximum width */
     height: auto;
     object-fit: cover;
-    /*border: 5px solid #b0e0e6;*/ /* Border matching pastel theme */
     border: 5px solid #87CEFA;
 }
 
 .text-content {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Ensure text starts at the top */
     font-size: 1.2em;
     color: #666;
     text-align: justify;
@@ -98,25 +99,25 @@ header nav ul li a:hover {
 
 .social-links {
     display: flex;
-    justify-content: center; /* Center the icons horizontally */
-    margin-top: auto; /* Push the icons to the bottom of the vertical bar */
-    padding-bottom: 20px; /* Add some space at the bottom */
+    justify-content: center;
+    margin-top: 20px; /* Add space at the top */
+    padding-bottom: 20px;
 }
 
 .social-link {
-    font-size: 2em; /* Increase the size of the icons */
-    color: black; /* Set the color to black */
-    margin: 0 15px; /* Add horizontal spacing between icons */
+    font-size: 2em;
+    color: black;
+    margin: 0 15px;
     text-decoration: none;
 }
 
 .social-link:hover {
-    color: #666; /* Optionally, add a hover effect */
+    color: #666;
 }
 
 /* Hamburger Menu Styles */
 .menu-toggle {
-    display: none; /* Hidden by default */
+    display: none;
     font-size: 1.8em;
     background: none;
     border: none;
@@ -124,53 +125,62 @@ header nav ul li a:hover {
     cursor: pointer;
     position: absolute;
     top: 20px;
-    right: 30px; /* Position the hamburger icon on the right side */
+    right: 20px; /* Adjust to position correctly */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Show the hamburger icon on mobile */
+    body {
+        padding: 10px; /* Add padding to avoid content touching edges */
     }
 
-    #nav ul {
-        display: none; /* Hide navigation links by default on mobile */
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #nav ul.show {
-        display: flex; /* Show the menu when active */
+    header {
+        padding: 15px;
+        max-width: 100%; /* Full width on mobile */
     }
 
     .header-content {
-        width: 100%; /* Ensure the header content spans the full width */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Slightly reduce font size */
+    }
+
+    header nav ul {
         flex-direction: column;
         align-items: flex-start; /* Align items to the left */
-        padding: 0 20px; /* Add padding to the sides */
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* Space out nav items */
     }
 
     .container {
         flex-direction: column;
         align-items: center;
-        margin: 20px; /* Adjust margins for small screens */
+        padding: 0 10px; /* Add padding for better spacing */
+        max-width: 100%;
+        margin: 0; /* Remove margins to use full screen */
     }
 
     .profile-section {
+        margin-right: 0;
         margin-bottom: 20px;
     }
 
     .text-content {
-        margin: 0;
+        font-size: 1em; /* Adjust font size for readability */
+        text-align: left; /* Align text to the left */
     }
 
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-end;
+    .social-links {
+        flex-direction: row;
+        justify-content: space-around; /* Space out social icons */
     }
 
-    header nav ul li {
-        margin-left: 0;
-        margin-top: 5px;
+    .menu-toggle {
+        right: 15px; /* Adjust hamburger icon position */
     }
 }
