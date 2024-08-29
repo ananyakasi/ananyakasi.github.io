@@ -5,12 +5,12 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Increase line-height for readability */
+    line-height: 1.6;
 }
 
 header {
     background-color: #87CEFA;
-    padding: 20px; /* Adjust padding for smaller screens */
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,19 +63,19 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     margin: 5% auto;
     max-width: 950px;
-    padding: 0 20px; /* Add padding for better spacing */
+    padding: 0 20px;
 }
 
 .profile-section {
     flex: 0 0 auto;
-    margin-right: 40px; /* Reduce margin for smaller screens */
+    margin-right: 40px;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .profile-picture {
-    width: 100%; /* Make profile picture responsive */
-    max-width: 200px; /* Set maximum width */
+    width: 100%;
+    max-width: 200px;
     height: auto;
     object-fit: cover;
     border: 5px solid #87CEFA;
@@ -100,7 +100,7 @@ header nav ul li a:hover {
 .social-links {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Add space at the top */
+    margin-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -117,7 +117,7 @@ header nav ul li a:hover {
 
 /* Hamburger Menu Styles */
 .menu-toggle {
-    display: none;
+    display: none; /* Hidden by default */
     font-size: 1.8em;
     background: none;
     border: none;
@@ -125,18 +125,18 @@ header nav ul li a:hover {
     cursor: pointer;
     position: absolute;
     top: 20px;
-    right: 20px; /* Adjust to position correctly */
+    right: 20px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* Add padding to avoid content touching edges */
+        padding: 10px;
     }
 
     header {
         padding: 15px;
-        max-width: 100%; /* Full width on mobile */
+        max-width: 100%;
     }
 
     .header-content {
@@ -145,42 +145,26 @@ header nav ul li a:hover {
     }
 
     header h1 {
-        font-size: 1.5em; /* Slightly reduce font size */
+        font-size: 1.5em;
     }
 
     header nav ul {
+        display: none; /* Hide navigation by default on mobile */
         flex-direction: column;
-        align-items: flex-start; /* Align items to the left */
+        align-items: flex-start;
+        width: 100%; /* Full width on mobile */
+        margin-top: 15px;
+    }
+
+    header nav ul.show {
+        display: flex; /* Show the menu when active */
     }
 
     header nav ul li {
         margin: 10px 0; /* Space out nav items */
     }
 
-    .container {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 10px; /* Add padding for better spacing */
-        max-width: 100%;
-        margin: 0; /* Remove margins to use full screen */
-    }
-
-    .profile-section {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .text-content {
-        font-size: 1em; /* Adjust font size for readability */
-        text-align: left; /* Align text to the left */
-    }
-
-    .social-links {
-        flex-direction: row;
-        justify-content: space-around; /* Space out social icons */
-    }
-
     .menu-toggle {
-        right: 15px; /* Adjust hamburger icon position */
+        display: block; /* Show the hamburger icon on mobile */
     }
 }
