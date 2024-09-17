@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #075A8D;
+    background-color: #075A8D; /* 87CEFA*/
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -80,7 +80,7 @@ header nav ul li a:hover {
     max-width: 300px;
     height: auto;
     object-fit: cover;
-    border: 5px solid #87CEFA;
+    border: 5px solid #075A8D;
 }
 
 .text-content {
