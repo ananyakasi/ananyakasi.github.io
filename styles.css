@@ -99,6 +99,27 @@ header nav ul li a:hover {
     width: 100%;
 }
 
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #4682b4; /* Blue link color */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
