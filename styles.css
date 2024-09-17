@@ -179,7 +179,7 @@ header nav ul li a:hover {
     position: absolute; /* Ensures dropdown is positioned relative to header */
     top: 60px; /* Space below the hamburger icon */
     right: 20px; /* Align with the right side of the header */
-    background-color: #87CEFA; /* Matches header background */
+    background-color: #5D98D0; /* Matches header background 87CEFA*/
     display: none; /* Hidden by default */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Align items to the right */
