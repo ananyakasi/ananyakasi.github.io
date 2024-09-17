@@ -99,6 +99,10 @@ header nav ul li a:hover {
     width: 100%;
 }
 
+.contact-info {
+    text-align: left;
+    margin-left: 0; /* Ensures alignment with the image */
+}
 .contact-info p {
     margin: 10px 0;
     font-size: 1.2em;
@@ -117,7 +121,7 @@ header nav ul li a:hover {
 .profile-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .social-links {
