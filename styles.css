@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Light pastel blue background f0f8ff */
+  /*  background-color: #f0f8ff;*//* Light pastel blue background f0f8ff */
     color: #333;
     margin: 0;
     padding: 0;
@@ -76,8 +76,8 @@ header nav ul li a:hover {
 }
 
 .profile-picture {
-    width: 30%;
-    max-width: 30px;
+    width: 50%;
+    max-width: 90px;
     height: auto;
     object-fit: cover;
     border: 5px solid #5D98D0;
