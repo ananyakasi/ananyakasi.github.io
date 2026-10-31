@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Construction</title>
+  <style>
+    /* --- Basic layout --- */
+    body {
+      background-color: #ffffff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
 
+    /* --- Photo --- */
+    img {
+      width: var(--photo-size, 120px); /* configurable image size */
+      height: var(--photo-size, 120px);
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    /* --- Text --- */
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      margin-top: 0;
+      color: #666;
+    }
+
+    /* --- Link --- */
+    a {
+      color: #0a66c2;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 15px;
+      display: inline-block;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Subtle fade-in --- */
+    .container {
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Replace your-photo.jpg with your image file -->
+    <img src="ananya.jpeg" alt="Your Photo">
+
+    <h1>Under Construction</h1>
+    <p>I'm currently working on something new — check back soon!</p>
+
+    <!-- Replace # with your actual LinkedIn link -->
+    <a href="https://www.linkedin.com/in/kasiananya" target="_blank">Connect with me on LinkedIn</a>
+  </div>
+</body>
+</html>
