@@ -75,11 +75,11 @@ header nav ul li a:hover {
 }
 
 .profile-picture {
-    width: 75%;
-    max-width: 250px;
+    width: 86.25%;
+    max-width: 287.5px;
     height: auto;
     object-fit: cover;
-    border: 5px solid #e5e1da; /* soft neutral border */
+    border: 5px solid #e5e1da;
 }
 
 .text-content {
