@@ -1,339 +1,271 @@
+/*
+  Compatibility stylesheet for Ananya's existing CSS conventions.
+  It retains the original site's Lato/Arial typography, blue links,
+  flex-based .container, .profile-section, .profile-picture and .text-content
+  structure, while adding the refreshed academic homepage layout.
+*/
 
-
-/* ========================================
-   Global Styles
-======================================== */
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #ADD8E6;
-    color: #333333;
-    font-family: Lato, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #FCFBF9;
+  color: #333333;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-body {
-    min-height: 100vh;
-}
+body { min-height: 100vh; }
 
 a {
-    color: #0056A6;
-    text-decoration: none;
+  color: #0056A6;
+  text-decoration: none;
 }
-
 a:hover {
-    color: #003D75;
-    text-decoration: underline;
+  color: #003D75;
+  text-decoration: underline;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  z-index: 100;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid #dfe4eb;
+}
+.skip-link:focus { top: 12px; }
 
-/* ========================================
-   Header and Navigation
-======================================== */
-
-header {
-    background-color: #FFFFFF;
-    color: #333333;
-    padding: 20px 0;
+/* Header uses the same white/blue/neutral palette as the earlier stylesheet. */
+.site-header {
+  width: 100%;
+  background: #FCFBF9;
+}
+.site-header-inner {
+  width: 90%;
+  max-width: 1380px;
+  min-height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  border-bottom: 1px solid #E5E7EB;
+}
+.site-name {
+  flex-shrink: 0;
+  color: #333333;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.site-name:hover {
+  color: #333333;
+  text-decoration: none;
+}
+.primary-navigation {
+  display: flex;
+  align-items: stretch;
+  align-self: stretch;
+  gap: clamp(20px, 3vw, 44px);
+}
+.primary-navigation a {
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  color: #333333;
+  font-size: 1.05rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.primary-navigation a:hover,
+.primary-navigation a.active {
+  color: #0056A6;
+  text-decoration: none;
+}
+.primary-navigation a.active { border-bottom-color: #0056A6; }
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: #333333;
+  font: inherit;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 600;
+/* Reuses the original class names: .container, .profile-section and .text-content. */
+.container.home-intro {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 40px;
+  width: 90%;
+  max-width: 1380px;
+  margin: 52px auto 0;
 }
-
-header nav {
-    margin-top: 10px;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-header nav a {
-    color: #0056A6;
-}
-
-
-/* ========================================
-   Main Content
-======================================== */
-
-.wrapper,
-#main {
-    width: 100%;
-    background-color: #FFFFFF;
-}
-
-.container {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 40px;
-
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-}
-
-
-/* ========================================
-   Profile Section
-======================================== */
-
 .profile-section {
-    display: flex;
-    flex: 0 0 287.5px;
-    flex-direction: column;
-    align-items: center;
-
-    width: 100%;
-    max-width: 287.5px;
+  display: flex;
+  flex: 0 0 287.5px;
+  flex-direction: column;
+  align-items: stretch;
+  width: 287.5px;
+  max-width: 287.5px;
 }
-
 .profile-picture {
-    display: block;
-    width: 100%;
-    max-width: 287.5px;
-    height: auto;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  max-width: 287.5px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px;
 }
-
-.profile-name {
-    margin: 15px 0 5px;
-    font-size: 2.2rem;
-    font-weight: 600;
-    line-height: 1.2;
-    text-align: center;
-}
-
-.profile-title {
-    margin: 0;
-    color: #555555;
-    font-size: 1rem;
-    text-align: center;
-}
-
-
-/* ========================================
-   Profile Links
-======================================== */
-
 .profile-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    width: 100%;
-    margin-top: 20px;
-    padding-bottom: 20px;
-
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 8px;
 }
-
 .profile-links a {
-    color: #0056A6;
-    font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #0056A6;
+  font-size: .94rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
+.profile-links a i { font-size: 1rem; }
 
-.profile-links a:hover {
-    text-decoration: underline;
+.text-content.home-bio {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  color: #444444;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.58;
+  text-align: left;
 }
-
-
-/* ========================================
-   Biography and Text Content
-======================================== */
-
-.text-content {
-    flex: 1;
-    min-width: 0;
-
-    color: #444444;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: justify;
+.home-bio .profile-name {
+  width: auto;
+  margin: -8px 0 3px;
+  color: #252525;
+  font-family: Lato, Arial, sans-serif;
+  font-size: clamp(2.2rem, 3.3vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  text-align: left;
 }
-
-.text-content h1,
-.text-content h2,
-.text-content h3 {
-    color: #222222;
-    line-height: 1.3;
-    text-align: left;
+.academic-title {
+  margin: 0 0 17px;
+  color: #4b4b4b;
+  font-size: clamp(1.1rem, 1.8vw, 1.42rem);
+  line-height: 1.45;
 }
-
-.text-content h1 {
-    margin-top: 0;
-    font-size: 2rem;
+.home-bio p:not(.academic-title) {
+  margin: 0 0 15px;
+  font-size: 1.05em;
+  line-height: 1.58;
+  text-align: left;
 }
+.home-bio h2, .home-bio h3 { text-align: left; }
 
-.text-content h2 {
-    margin-top: 28px;
-    font-size: 1.5rem;
-}
-
-.text-content h3 {
-    margin-top: 22px;
-    font-size: 1.2rem;
-}
-
-.text-content p {
-    margin: 0 0 18px;
-}
-
-.text-content ul,
-.text-content ol {
-    padding-left: 25px;
-}
-
-.text-content li {
-    margin-bottom: 8px;
-}
-
-
-/* ========================================
-   Publications Page
-======================================== */
-
-.publications {
+/* Responsive layout */
+@media (max-width: 900px) {
+  .container.home-intro {
+    gap: 28px;
     width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-    background-color: #FFFFFF;
+  }
+  .profile-section {
+    flex-basis: 250px;
+    width: 250px;
+    max-width: 250px;
+  }
+  .research-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .research-card:last-child { grid-column: 1 / -1; }
 }
 
-.publications h1 {
-    margin-top: 0;
-    color: #222222;
-    font-size: 2rem;
-}
-
-.publications h2 {
+@media (max-width: 650px) {
+  .site-header-inner {
+    position: relative;
+    width: 92%;
+    min-height: 68px;
+  }
+  .site-name { font-size: 1.4rem; }
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+  }
+  .primary-navigation {
+    position: absolute;
+    z-index: 10;
+    top: calc(100% - 1px);
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 14px;
+    border: 1px solid #E5E7EB;
+    border-radius: 0 0 8px 8px;
+    background: #FFFFFF;
+    box-shadow: 0 8px 20px rgb(20 30 40 / 8%);
+  }
+  .primary-navigation.is-open { display: flex; }
+  .primary-navigation a {
+    min-height: 44px;
+    border-bottom: 0;
+  }
+  .container.home-intro {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 27px;
+    width: 92%;
     margin-top: 30px;
-    color: #222222;
-    font-size: 1.5rem;
-}
-
-.publication-list {
-    padding-left: 25px;
-}
-
-.publication-list li {
-    margin-bottom: 18px;
-    line-height: 1.6;
-}
-
-
-/* ========================================
-   Footer
-======================================== */
-
-footer {
+  }
+  .profile-section {
+    flex: 0 0 auto;
     width: 100%;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    color: #666666;
-    font-size: 0.9rem;
-    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .profile-picture { width: 100%; }
+  .profile-links {
+    justify-content: center;
+    gap: 12px 14px;
+  }
+  .text-content.home-bio {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .academic-title { font-size: 1.12rem; }
+  .site-footer { margin-top: 35px; }
 }
 
-
-/* ========================================
-   Responsive Layout
-======================================== */
-
-@media (max-width: 768px) {
-    header {
-        padding: 15px 0;
-    }
-
-    header h1 {
-        font-size: 1.7rem;
-    }
-
-    header nav ul {
-        gap: 12px;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-
-        width: 92%;
-        margin: 25px auto;
-    }
-
-    .profile-section {
-        flex-basis: auto;
-        width: 100%;
-        max-width: 287.5px;
-    }
-
-    .profile-picture {
-        width: 100%;
-    }
-
-    .profile-name {
-        font-size: 1.8rem;
-    }
-
-    .text-content {
-        width: 100%;
-        font-size: 1rem;
-        text-align: left;
-    }
-
-    .text-content h1 {
-        font-size: 1.7rem;
-    }
-
-    .text-content h2,
-    .publications h2 {
-        font-size: 1.35rem;
-    }
-
-    .publications {
-        width: 92%;
-        margin: 25px auto;
-    }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
-/* TEMPORARY TEST: apply light blue to all page regions */
-html,
-body,
-header,
-.wrapper,
-#main,
-.container,
-.profile-section,
-.text-content,
-.text-side,
-footer {
-    background-color: #FFFFFF !important;
-    background-image: none !important;
-}
-
-
