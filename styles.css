@@ -10,7 +10,7 @@ body {
 
 header {
     background-color: #faf8f5; /* same as body, so no visible band */
-    padding: 30px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
