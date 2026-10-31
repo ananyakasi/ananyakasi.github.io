@@ -1,68 +1,158 @@
-    <!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <title>Ananya Kasi</title> -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta name="google-site-verification" content="V7N3bIb4PeGYlHr4Mbnmldf-qHVVmeywOkvC5gKSlN8" />
-</head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Ananya Kasi is a PhD student in Human-Centered Computing at Georgia Tech researching technology-mediated work, gig labor, and policy.">
+
+  <title>Ananya Kasi | Human-Centered Computing</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-    <!-- Header -->
 
-   <header id="header">
-    <div class="header-content">
-        <!-- <h1>Ananya Kasi1</h1> --> 
-          <button class="menu-toggle" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-          </button>
-        <nav id="nav">
-          <!--  <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="cv.html">CV</a></li> -->
-            <!-- </ul> -->
-        </nav>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Top navigation -->
+  <header class="site-header">
+    <div class="site-header-inner">
+
+      <a class="site-name" href="index.html">Ananya Kasi</a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
+        <a class="active" href="index.html" aria-current="page">About</a>
+        <a href="#about">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="Ananya_Kasi_CV.pdf">CV</a>
+      </nav>
+
     </div>
-</header>
+  </header>
 
+  <!-- Main content -->
+  <main id="main-content">
 
+    <section class="container home-intro" id="about">
 
-    <!-- Main Content -->
-    <section id="main" class="wrapper">
-        <div class="container">
-            <div class="profile-section">
-            <!-- </p> -->
-                <img src="ananya.jpeg" alt="Ananya Kasi's Photograph" class="profile-picture">
-            <!-- </p> -->
-            </div>
-            <div class="text-content">
-                <h1 class = "profile-name">Ananya Kasi</h1>
-                <div class="text-side">
-                    <!-- Text beside the image -->
-                    <p>Hi, I'm Ananya! I’m a <a href="https://www.cc.gatech.edu/degree-programs/phd-human-centered-computing" target="_blank" rel="noopener noreferrer">Human-Centered Computing</a> PhD student at Georgia Tech, working with the D3 Lab and advised by <a href="https://naveena-karusala-870740.webflow.io/" target="_blank" rel="noopener noreferrer">Dr. Naveena Karusala</a>. My research is at the intersection of Human-Computer Interaction, labor, and policy. I use qualitative methods and community-engaged approaches to understand the experiences of women gig workers and to provide policy recommendations focused on more dignified futures. Previously, I graduated from the University of Michigan, Ann Arbor, where I worked with the Computational HCI lab advised by <a href="https://www.nikolabanovic.net" target="_blank" rel="noopener noreferrer">Dr. Nikola Banovic</a>. </p>
-                   <!-- <p>Hi, I’m Ananya! I'm a PhD student at the D3 lab  work as an undergraduate research assistant advised by <a href="https://www.nikolabanovic.net" target="_blank" rel="noopener noreferrer">Dr. Nikola Banovic</a>. I lead and contribute to projects supporting end-users through AI literacy, critical reflection, and tech policy, which has equipped me with good research skills and helped hone my interests. Through my CS major and other interdisciplinary courses, I have learned technological aspects and, more importantly, to ask socio-tech questions around community impact. I believe problems with obscure technology cannot be solved with more obscure technology but by experts grounding themselves in communities they intend to impact.</p> 
-                     <p></p> My research interests are in the intersection of Human-Computer Interaction (HCI), specifically Human-AI Interaction (HAI), and Technology Policy. I envision a world where vulnerable communities do not encounter negative experiences when interacting with algorithmic tools. Addressing this requires coordinated, interdisciplinary efforts in social understanding of users, technology, and policy. By pursuing a PhD, I aim to develop the expertise needed to work on solutions in this critical intersection.</p> -->
-            
-               </div>
-                 <div class="profile-links">
-                    <a href="mailto:akasi7@gatech.edu">Email</a>
-                    <span>/</span>
-                    <a href="cv.html">CV</a>
-                    <span>/</span>
-                    <a href="https://www.linkedin.com/in/kasiananya" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <span>/</span>
-                    <a href="publications.html">Publications</a>
-                </div>
-             </div>
+      <!-- Portrait and profile links -->
+      <aside class="profile-section">
+
+        <img
+          class="profile-picture"
+          src="images/ananya.jpg"
+          alt="Ananya Kasi">
+
+        <div class="profile-links" aria-label="Contact and academic profiles">
+
+          <a href="mailto:REPLACE_WITH_ANANYA_EMAIL">
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            Email
+          </a>
+
+          <a href="Ananya_Kasi_CV.pdf">
+            <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+            CV
+          </a>
+
+          <a
+            href="REPLACE_WITH_LINKEDIN_URL"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            LinkedIn
+          </a>
+
+          <a
+            href="REPLACE_WITH_GOOGLE_SCHOLAR_URL"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            Google Scholar
+          </a>
+
+          <a href="publications.html">
+            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+            Publications
+          </a>
+
         </div>
+
+      </aside>
+
+      <!-- Biography -->
+      <div class="text-content home-bio">
+
+        <p class="academic-title">
+          PhD Student in Human-Centered Computing, Georgia Tech
+        </p>
+
+        <p>
+          I research the design and societal impacts of technology in the
+          world of work, with a focus on gig labor, platform work, and
+          policy—particularly the experiences of women gig workers.
+          I use qualitative methods and community-engaged approaches to
+          understand their lived experiences and to inform more equitable
+          and dignified futures.
+        </p>
+
+        <p>
+          I work with the
+          <a href="REPLACE_WITH_D3_LAB_URL">D3 Lab</a>
+          at Georgia Tech, advised by
+          <a href="REPLACE_WITH_ADVISOR_URL">Dr. Naveena Karusala</a>.
+          Previously, I graduated from the University of Michigan, Ann Arbor,
+          where I worked with the Computational HCI Lab advised by
+          <a href="REPLACE_WITH_PREVIOUS_ADVISOR_URL">Dr. Nikola Banovic</a>.
+        </p>
+
+      </div>
+
     </section>
-    
-   <script>
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('#nav ul').classList.toggle('show');
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div>© <span id="current-year">2026</span> Ananya Kasi</div>
+  </footer>
+
+  <!-- Mobile navigation and current year -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.primary-navigation');
+
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+
+      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute(
+        'aria-label',
+        open ? 'Open navigation' : 'Close navigation'
+      );
+
+      toggle.innerHTML = open
+        ? '<i class="fa-solid fa-bars" aria-hidden="true"></i>'
+        : '<i class="fa-solid fa-xmark" aria-hidden="true"></i>';
+
+      nav.classList.toggle('is-open', !open);
     });
-   </script>
-    
+
+    document.getElementById('current-year').textContent =
+      new Date().getFullYear();
+  </script>
+
 </body>
 </html>
