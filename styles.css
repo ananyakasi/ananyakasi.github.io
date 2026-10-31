@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F5F5F5; /* plain off-white */
+    background-color: #ffffff; /* plain off-white */
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 
 header {
     font-family: Arial, sans-serif;
-    background-color: #F5F5F5; /* same as body, so no visible band */
+    background-color: #ffffff; /* same as body, so no visible band */
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -144,13 +144,19 @@ header nav ul li a:hover {
     flex-direction: column;
     align-items: flex-start;
 }
-
-.social-links {
+.profile-links {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     padding-bottom: 20px;
 }
+
+/* .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+} */
 
 .social-link {
     font-size: 2em;
