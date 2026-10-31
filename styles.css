@@ -321,5 +321,18 @@ footer {
         margin: 25px auto;
     }
 }
+/* TEMPORARY TEST: apply light blue to all page regions */
+html,
+body,
+header,
+.wrapper,
+#main,
+.container,
+.profile-section,
+.text-content,
+.text-side,
+footer {
+    background-color: #ADD8E6 !important;
+}
 
 
