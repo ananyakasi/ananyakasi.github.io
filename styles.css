@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fefefa; /* plain off-white */
+    background-color: #F5F5F5; /* plain off-white */
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 
 header {
     font-family: Arial, sans-serif;
-    background-color: #fefefa; /* same as body, so no visible band */
+    background-color: #F5F5F5; /* same as body, so no visible band */
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -81,7 +81,7 @@ header nav ul li a:hover {
     max-width: 287.5px;
     height: auto;
     object-fit: cover;
-    border: 5px solid #e5e1da;
+    /* border: 5px solid #e5e1da; */
 } 
 
 .profile-name {
