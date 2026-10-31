@@ -63,7 +63,7 @@ header nav ul li a:hover {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin: 5% auto;
+    margin: 2% auto;
     max-width: 75%;
 }
 
