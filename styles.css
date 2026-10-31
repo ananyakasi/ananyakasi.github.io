@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    font-family: Arial, sans-serif;
     background-color: #fdfcfb; /* same as body, so no visible band */
     padding: 10px;
     display: flex;
@@ -21,6 +22,7 @@ header {
 }
 
 .header-content {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -92,12 +94,14 @@ header nav ul li a:hover {
 }
 
 .profile-section {
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .text-content {
+    font-family: Arial, sans-serif;
     flex: 1;
     font-size: 1.2em;
     color: #666;
@@ -105,6 +109,7 @@ header nav ul li a:hover {
 }
 
 .text-side {
+    font-family: Arial, sans-serif;
     margin-bottom: 5px;
 }
 
