@@ -75,8 +75,8 @@ header nav ul li a:hover {
 }
 
 .profile-picture {
-    width: 50%;
-    max-width: 150px;
+    width: 75%;
+    max-width: 250px;
     height: auto;
     object-fit: cover;
     border: 5px solid #e5e1da; /* soft neutral border */
