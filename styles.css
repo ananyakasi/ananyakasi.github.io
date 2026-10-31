@@ -8,18 +8,19 @@ body {
     line-height: 1.4;
 }
 
-header {
+/* header {
     font-family: Arial, sans-serif;
     background-color: #ffffff; /* same as body, so no visible band */
-    padding: 10px;
+    /* padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #3a3a3a; /* grey-ish black */
-    position: relative;
+    /* position: relative;
     max-width: 100%;
-    margin: 0 auto;
-}
+    margin: 0 auto; */ 
+} 
+
 
 /* .header-content {
     font-family: Arial, sans-serif;
@@ -35,9 +36,9 @@ header {
     font-size: 1.8em;
     font-weight: bold;
     color: #3a3a3a; /* name in grey-ish black */
-} */
+} 
 
-header nav ul {
+/* header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -59,7 +60,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #888;
-}
+} */
 
 .container {
     display: flex;
