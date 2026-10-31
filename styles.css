@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #faf8f5; /* plain off-white */
+    background-color: #fdfcfb; /* plain off-white */
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,10 +9,10 @@ body {
 }
 
 header {
-    background-color: #faf8f5; /* same as body, so no visible band */
+    background-color: #fdfcfb; /* same as body, so no visible band */
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: #3a3a3a; /* grey-ish black */
     position: relative;
@@ -22,7 +22,7 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
