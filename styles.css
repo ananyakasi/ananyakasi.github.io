@@ -255,6 +255,9 @@ body {
         text-align: left;
     }
 }
+body {
+    background: #FFFFFF !important;
+}
 
 /* body {
     font-family: Arial, sans-serif;
