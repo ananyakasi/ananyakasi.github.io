@@ -333,6 +333,7 @@ header,
 .text-side,
 footer {
     background-color: #FFFFFF !important;
+    background-image: none !important;
 }
 
 
