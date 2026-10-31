@@ -1,31 +1,36 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Light pastel blue background */
+    background-color: #f0f8ff; /* Light pastel blue background f0f8ff */
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.4;
 }
 
 header {
-    background-color: #b0e0e6; /* Pastel blue header background */
-    padding: 20px; /* Adjust padding for header */ 
+    background-color: #5D98D0; /* 87CEFA*/
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
-    width: 70%;
-    max-width: 1200px; /* Set a max-width for the header content */
-    margin: 0 auto; /* Center the header content */
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.8em; /* Font size for the header */
+    font-size: 1.8em;
     font-weight: bold;
 }
 
@@ -34,53 +39,59 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
 }
 
 header nav ul li {
-    margin-left: 20px; /* Space between links */
+    margin-left: 20px;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-size: 1.3em;
+   /* font-weight: bold;*/
+    white-space: nowrap;
 }
 
 header nav ul li a:hover {
-    color: #ddd; /* Light gray on hover */
+    color: #ddd;
 }
 
 .container {
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
-    margin: 10% auto; /* Centered with margins on left and right */ /* changed from 80 to 10%*/
-    max-width: 70%; /* Center container and restrict maximum width ----changed from 1200 to 60%*/
+    margin: 5% auto;
+    max-width: 75%;
+   /* padding: 0 20px;*/
 }
 
 .profile-section {
     flex: 0 0 auto;
-    margin-right: 20px; /* Space between profile section and text */
+    margin-right: 40px;
     text-align: center;
-    margin-bottom: 20px; /* Space below profile section */
+    margin-bottom: 20px;
 }
 
 .profile-picture {
-    width: 250px; /* Adjust width for profile picture */
+    width: 50%;
+    max-width: 150px;
     height: auto;
     object-fit: cover;
-    border: 5px solid #b0e0e6; /* Border matching pastel theme */
+    border: 5px solid #5D98D0;
 }
 
 .text-content {
     flex: 1;
-    display: flex;
-    flex-direction: column;
     font-size: 1.2em;
     color: #666;
+    text-align: justify;
 }
 
 .text-side {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .text-below {
@@ -88,29 +99,107 @@ header nav ul li a:hover {
     width: 100%;
 }
 
+.contact-info {
+    text-align: left;
+    margin-left: 0; /* Ensures alignment with the image */
+}
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #4682b4; /* Blue link color */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social-link {
+    font-size: 2em;
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #666;
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 1.8em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .header-content {
         flex-direction: column;
-        align-items: center;
-        margin: 20px; /* Adjust margins for small screens */
+        align-items: flex-start;
     }
 
-    .profile-section {
-        margin-bottom: 20px;
-    }
-
-    .text-content {
-        margin: 0;
+    header h1 {
+        font-size: 1.5em;
     }
 
     header nav ul {
-        flex-direction: column;
-        align-items: flex-end;
+    position: absolute; /* Ensures dropdown is positioned relative to header */
+    top: 60px; /* Space below the hamburger icon */
+    right: 20px; /* Align with the right side of the header */
+    background-color: #5D98D0; /* Matches header background 87CEFA*/
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items to the right */
+    width: auto; /* Adjust width to content */
+    padding: 0; /* Remove default padding */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    min-width: 100px; /* Minimum width slightly more than content */
+    padding: 10px  0; /* Optional padding for better spacing */
+    }
+
+    header nav ul.show {
+        display: flex; /* Show the menu when active */
     }
 
     header nav ul li {
-        margin-left: 0;
-        margin-top: 5px;
+        margin: 10px 0; /* Space out nav items */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the hamburger icon on mobile */
     }
 }
