@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fdfcfb; /* plain off-white */
+    background-color: #fefefa; /* plain off-white */
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 
 header {
     font-family: Arial, sans-serif;
-    background-color: #fdfcfb; /* same as body, so no visible band */
+    background-color: #fefefa; /* same as body, so no visible band */
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -21,21 +21,21 @@ header {
     margin: 0 auto;
 }
 
-.header-content {
+/* .header-content {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 75%;
     margin: 0 auto;
-}
+} */
 
-header h1 {
+/* header h1 {
     margin: 0;
     font-size: 1.8em;
     font-weight: bold;
     color: #3a3a3a; /* name in grey-ish black */
-}
+} */
 
 header nav ul {
     list-style: none;
@@ -85,11 +85,12 @@ header nav ul li a:hover {
 } 
 
 .profile-name {
+    font-family: Arial, sans-serif;
     font-size: 1.8em;
     font-weight: bold;
     color: #3a3a3a;
     margin: 0 0 20px 0;
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 
