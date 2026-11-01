@@ -269,3 +269,35 @@ img {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Centred page frame with vertical borders */
+.page-frame {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-left: 1px solid #E5E1DB;
+  border-right: 1px solid #E5E1DB;
+}
+
+/* Keep the header and biography aligned */
+.site-header-inner {
+  width: 90%;
+  max-width: none;
+}
+
+.container.home-intro {
+  width: 90%;
+  max-width: none;
+}
+
+/* Adjust spacing on mobile */
+@media (max-width: 650px) {
+  .site-header-inner {
+    width: 92%;
+  }
+
+  .container.home-intro {
+    width: 92%;
+  }
+}
