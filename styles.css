@@ -276,8 +276,6 @@ img {
   max-width: 1200px;
   min-height: 100vh;
   margin: 0 auto;
-  border-left: 1px solid #E5E1DB;
-  border-right: 1px solid #E5E1DB;
 }
 
 /* Keep the header and biography aligned */
